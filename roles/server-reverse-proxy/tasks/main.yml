@@ -4,7 +4,7 @@
   register: reverse_proxy_template
 
 - name: Enable site
-  command: a2ensite {{web_sub_path}}
+  command: ln -s /etc/apache2/sites-available/{{web_sub_path}}.conf /etc/apache2/sites-enabled/{{web_sub_path}}.conf
   when: reverse_proxy_template.changed
 
 - name: Reload
