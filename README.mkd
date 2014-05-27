@@ -10,6 +10,10 @@ means one _Cider-CI Server_ and a number of _Cider-CI Executors_.
 Usage
 -----
 
+Clone the project, including submodules, with:
+
+    git clone --recursive https://github.com/DrTom/cider-ci_ansible-setup
+
 We use it like this: 
 
     ansible-playbook -i hosts-zhdk play_site.yml
@@ -18,7 +22,7 @@ Create your own `hosts` file and use that one it in lieu of
 `hosts-zhdk`.
 
 This playbook contains a number of git submodules. Do not forget to initialize
-those. 
+those (already taken care of when cloning recursive, like above(. 
 
 ### Forcefully restarting the Application Server
 
