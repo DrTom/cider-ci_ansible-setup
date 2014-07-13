@@ -1,3 +1,0 @@
-executor_service_nrepl_port: 7888
-executor_service_http_port: 8448
-executor_service_https_port: 8443
